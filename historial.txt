@@ -1,0 +1,11 @@
+commit ea6cc06e20429bd51e001cd29887207daa54f7a7
+Author: CCDM14 <ccdm14@CCDM14.local>
+Date:   Mon Feb 18 11:50:12 2019 -0700
+
+    Cmbio de titulo y texto del body
+
+commit cf62e1793fab57f8246cfa551a9d87043504ccc6
+Author: CCDM14 <ccdm14@CCDM14.local>
+Date:   Mon Feb 18 11:44:36 2019 -0700
+
+    Inicio de proyecto - commit inicial
