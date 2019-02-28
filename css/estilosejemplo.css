@@ -1,0 +1,26 @@
+body{
+	max-width: 1024px;
+}
+
+header{
+	background: blue;
+	color: white;
+	text-align: center;
+}
+
+header nav ul li{
+	/*fondo del li*/
+	background: orange;
+	/*redondea las esquinas*/
+	border-radius: 5px;
+	color: black;
+	display: inline-block; /* para poner el menu en horizontal*/
+	width: 90px;
+}
+
+header nav ul li:hover{      /*Para ponerle el mouse encima y que cambie de color*/
+	background: black;
+	color: orange;
+}
+
+/**/
