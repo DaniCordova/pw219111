@@ -15,5 +15,14 @@
 	<div id="div2" ondragover="allowDrop(event)" ondrop="drop(event)">
 		
 	</div>
+	<script>
+		function drop(ev){
+			ev.preventDefault();
+			vat data=ev.dataTransfer.getData("text");
+		}
+		function allowDrop(ev){
+
+		}
+	</script>
 </body>
 </html>
