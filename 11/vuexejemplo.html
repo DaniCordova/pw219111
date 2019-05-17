@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Ejemplo de Vuex.js</title>
+		<script ></script>
+	<script src="https://unpkg.com/vuex@3.1.1/dist/vuex.js"></script>
+</head>
+<body>
+	<div id="app">
+		
+	</div>
+
+	<script>
+	// <!-- Creamos componente  -->
+	Vue.component('titulo',{
+		template:
+		`
+			<div>
+				<h1> Numero: {{$store.state.numero}} </h1>
+				<hijo></hijo>
+			</div>
+		`
+	});
+
+
+	// <!-- Creamos componente  -->
+	Vue.component('hijo',{
+		template:
+		`
+			<div>
+				<h1> Numero: {{$store.state.numero }} </h1>
+				<button @click="store.commit('aumentar')"> + </button>
+			</div>
+		`
+	});
+
+	// <!-- Creamos Store compartido -->
+	const store = new Vuex.Store({
+		state:{
+			numero: 10
+			store:store
+		},
+		mutations:{
+			aumentar(state){
+				state.numero ++
+			}
+		}
+	});
+	new Vue({
+		el: '#app'
+	})
+	</script>
+</body>
+</html>
